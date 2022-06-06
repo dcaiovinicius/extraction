@@ -1,5 +1,7 @@
 module Extraction
   def self.parse(expression)
-    true
+    return nil if expression.empty?
+
+    expression.scan(/<>/).length
   end
 end
