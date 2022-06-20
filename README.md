@@ -1,14 +1,15 @@
 # Extraction
 
-```
-<<<<>><>><>><<><>>>><>><>>>
-```
+Perform a character extraction
 
 ### How to use?
 
 ```ruby
 require_relative 'lib/extraction.rb'
 
-# Perform a character extraction
+# Expression: <{|}{|}{|}>
+# pattern: {}
+# remove: |
 Extraction.parse('<{|}{|}{|}>', '{}','|')
+=> ["{}", "{}", "{}"]
 ```
