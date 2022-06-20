@@ -1,7 +1,4 @@
 module Extraction
-  # Parses a string and returns an array.
-  # Input: Extraction.parse("<<.<<..>><>><.>.>.<<.>.<.>>>><>><>>", '.')
-  # output: ['<>', '<>', '<>', '<>', '<>', '<>']
   def self.parse(expression, pattern, remove)
     return nil if expression.empty?
 
